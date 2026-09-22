@@ -1,0 +1,156 @@
+/* =========================================================
+   Password Security Checker
+   ========================================================= */
+
+   .psc-panel {
+    box-sizing: border-box;
+
+    width: 100%;
+    max-width: 420px;
+
+    margin-top: 8px;
+    margin-bottom: 12px;
+    padding: 12px 14px;
+
+    background: #ffffff;
+
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.08);
+
+    font-family:
+        Arial,
+        sans-serif;
+
+    font-size: 13px;
+
+    line-height: 1.5;
+
+    color: #333;
+
+    z-index: 2147483647;
+}
+
+
+/* Header */
+
+.psc-header {
+    font-weight: bold;
+
+    margin-bottom: 7px;
+}
+
+
+/* Strength */
+
+.psc-strength {
+    margin-bottom: 6px;
+}
+
+
+/* Meter */
+
+.psc-meter {
+    width: 100%;
+    height: 6px;
+
+    background: #eeeeee;
+
+    border-radius: 5px;
+
+    overflow: hidden;
+
+    margin-bottom: 10px;
+}
+
+
+.psc-meter-fill {
+    height: 100%;
+
+    width: 0%;
+
+    background: #999999;
+
+    transition:
+        width 0.25s ease,
+        background 0.25s ease;
+}
+
+
+/* Pattern */
+
+.psc-pattern {
+    margin-top: 5px;
+}
+
+
+/* Breach */
+
+.psc-breach {
+    margin-top: 5px;
+}
+
+
+/* Recommendation */
+
+.psc-tip {
+    margin-top: 8px;
+
+    font-size: 12px;
+
+    color: #555;
+}
+
+
+/* Weak */
+
+.psc-weak {
+    border-left: 4px solid #d93025;
+}
+
+
+.psc-weak .psc-meter-fill {
+    background: #d93025;
+}
+
+
+/* Moderate */
+
+.psc-moderate {
+    border-left: 4px solid #f9ab00;
+}
+
+
+.psc-moderate .psc-meter-fill {
+    background: #f9ab00;
+}
+
+
+/* Strong */
+
+.psc-strong {
+    border-left: 4px solid #188038;
+}
+
+
+.psc-strong .psc-meter-fill {
+    background: #188038;
+}
+
+
+/* Breached password */
+
+.psc-exposed {
+    border-left: 4px solid #d93025;
+
+    background: #fff5f5;
+}
+
+
+.psc-exposed .psc-breach {
+    color: #b00020;
+
+    font-weight: bold;
+}
